@@ -1,0 +1,61 @@
+$base-font-size: 16px !default;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height: 24px !default;
+
+//fonts
+$font_0: "Amaranth";
+$font_1: sans-serif;
+
+$base-unit: "em" !default;
+
+// The default font family.
+$base-font-family: $font_0 !default;
+
+// The font sizes for h1-h6.
+$h1-font-size: 2 * $base-font-size !default;
+$h2-font-size: 1.5 * $base-font-size !default;
+$h3-font-size: 1.17 * $base-font-size !default;
+$h4-font-size: 1 * $base-font-size !default;
+$h5-font-size: 0.83 * $base-font-size !default;
+$h6-font-size: 0.67 * $base-font-size !default;
+
+// The amount lists and blockquotes are indented.
+$indent-amount: 40px !default;
+
+$normalize-vertical-rhythm: false !default;
+
+//colors
+$color_catskill_white_approx: #edf3f8;
+$white: #fff;
+$black_19: rgba(0, 0, 0, 0.19);
+$black_23: rgba(0, 0, 0, 0.23);
+$black_30: rgba(0, 0, 0, 0.3);
+$color_alto_approx: #ddd;
+
+$normal: #a4acaf;
+$fighting: #d56723;
+$flying: #3dc7ef;
+$poison: #b97fc9;
+$ground: #f7de3f;
+$rock: #a38c21;
+$bug: #729f3f;
+$ghost: #7b62a3;
+$steel: #9eb7b8;
+$fire: #fd7d24;
+$water: #4592c4;
+$grass: #9bcc50;
+$electric: #eed535;
+$psychic: #f366b9;
+$ice: #51c4e7;
+$dragon: #53a4cf;
+$dark: #707070;
+$fairy: #fdb9e9;
+$unknown: #000;
+$shadow: #000;
+
+$color_portage_approx: #918afa;
+$color_gallery_approx: #f0f0f0;
+$color_gray_nurse_approx: #e8e8e8;
+$color_perano_approx: #a3b5e8;
+$white: #fff;

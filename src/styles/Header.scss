@@ -1,0 +1,32 @@
+$br-point: 992px;
+
+@mixin breakpoint($point) {
+  @if $point == $br-point {
+    @media (max-width: $br-point) {
+      @content;
+    }
+  }
+}
+
+.header {
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include breakpoint($br-point) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+header {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(240, 240, 240, 1) 47%,
+    rgba(232, 232, 232, 1) 96%,
+    rgba(232, 232, 232, 1) 100%
+  );
+}

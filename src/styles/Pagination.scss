@@ -1,0 +1,73 @@
+@import "normalize/normalize";
+
+$b_point: 576px;
+
+@mixin breakpoint($point) {
+  @if $point == $b_point {
+    @media (max-width: $b_point) {
+      @content;
+    }
+  }
+}
+
+%extend_1 {
+  background: radial-gradient(
+    ellipse at center,
+    $color_gallery_approx 0,
+    $color_portage_approx 47%,
+    $color_perano_approx 96%,
+    $color_gray_nurse_approx 100%
+  );
+  color: $white;
+  font-weight: bold;
+}
+
+.pagination {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    cursor: pointer;
+
+    &.selected {
+      background: radial-gradient(
+        ellipse at center,
+        $color_portage_approx 0,
+        $color_gallery_approx 47%,
+        $color_gray_nurse_approx 96%,
+        $color_perano_approx 100%
+      );
+      border-radius: 50%;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    @include breakpoint($b_point) {
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: 10px 18px;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .previous:active {
+    @extend %extend_1;
+  }
+
+  .next:active {
+    @extend %extend_1;
+  }
+}
